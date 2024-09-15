@@ -26,7 +26,7 @@ class Configs {
 
   private function modules(){
     /* Módulos que não devem estar instalados */
-    $uninstalled = [ 'update', 'comment', 'dblog', 'statistics', 'help', 'history', 'tour'];
+    $uninstalled = [ 'update', 'comment', 'dblog', 'statistics', 'help', 'history', 'tour', 'color', 'forum'];
     \Drupal::service('module_installer')->uninstall($uninstalled, TRUE);
 
     /* Módulos que devem estar instalados */
