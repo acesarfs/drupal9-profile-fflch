@@ -33,7 +33,6 @@ entity_clone
 fontyourface
 fontawesome
 local_fonts
-google_analytics
 google_fonts_api
 image_captcha
 imce

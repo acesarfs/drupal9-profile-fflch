@@ -59,7 +59,7 @@ Se quiser apagar o banco para fazer uma instalação zerada:
     ./vendor/bin/drupal database:drop
 
     # sqlite
-    rm web/sites/default/files/.ht.sqlite*
+    rm web/core/default/files/.ht.sqlite
 
 ## Adicionando temas, módulos e bibliotecas
 

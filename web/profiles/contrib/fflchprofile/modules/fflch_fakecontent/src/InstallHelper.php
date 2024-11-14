@@ -5,7 +5,7 @@ namespace Drupal\fflch_fakecontent;
 use Drupal\Core\DependencyInjection\ContainerInjectionInterface;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Extension\ModuleHandlerInterface;
-use Drupal\Core\Path\AliasManagerInterface;
+use Drupal\path_alias\AliasManager;
 use Drupal\Core\State\StateInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Drupal\Component\Utility\Html;
@@ -23,7 +23,7 @@ class InstallHelper implements ContainerInjectionInterface {
   /**
    * The path alias manager.
    *
-   * @var \Drupal\Core\Path\AliasManagerInterface
+   * @var \Drupal\path_alias\AliasManager
    */
   protected $aliasManager;
 
@@ -51,7 +51,7 @@ class InstallHelper implements ContainerInjectionInterface {
   /**
    * Constructs a new InstallHelper object.
    *
-   * @param \Drupal\Core\Path\AliasManagerInterface $aliasManager
+   * @param \Drupal\path_alias\AliasManager $alias_manager
    *   The path alias manager.
    * @param \Drupal\Core\Entity\EntityTypeManagerInterface $entityTypeManager
    *   Entity type manager.
@@ -60,7 +60,7 @@ class InstallHelper implements ContainerInjectionInterface {
    * @param \Drupal\Core\State\StateInterface $state
    *   State service.
    */
-  public function __construct(AliasManagerInterface $aliasManager, EntityTypeManagerInterface $entityTypeManager, ModuleHandlerInterface $moduleHandler, StateInterface $state) {
+  public function __construct(AliasManager $aliasManager, EntityTypeManagerInterface $entityTypeManager, ModuleHandlerInterface $moduleHandler, StateInterface $state) {
     $this->aliasManager = $aliasManager;
     $this->entityTypeManager = $entityTypeManager;
     $this->moduleHandler = $moduleHandler;
@@ -72,7 +72,7 @@ class InstallHelper implements ContainerInjectionInterface {
    */
   public static function create(ContainerInterface $container) {
     return new static(
-      $container->get('path.alias_manager'),
+      $container->get('path_alias.manager'),
       $container->get('entity_type.manager'),
       $container->get('module_handler'),
       $container->get('state')
@@ -224,7 +224,7 @@ class InstallHelper implements ContainerInjectionInterface {
    */
   protected function fileUnmanagedCopy($path) {
     $filename = basename($path);
-    return file_unmanaged_copy($path, 'public://' . $filename, FILE_EXISTS_REPLACE);
+    return \Drupal::service('file_system')->copy($path, 'public://' . $filename, FILE_EXISTS_REPLACE);
   }
 
 }

@@ -152,7 +152,7 @@
         "fflch/boletim": "1.0.3",
         "fflch/cem-theme": "1.0.4",
         "fflch/centrodametropole_breadcrumb": "1.0.1",
-        "fflch/fflch-theme": "1.0.8",
+        "fflch/fflch-theme": "1.0.9",
         "fflch/urbandatabrasil_userform": "1.0.2",
         "fflch/webform_captcha_mandatory": "1.0.1",
         "fflch/webform_ficha_catalografica": "1.0.2",
@@ -164,7 +164,7 @@
         "npm-asset/tabletoolstoolbar": "0.0.1",
         "oomphinc/composer-installers-extender": "^2.0",
         "uspdev/utils": "^1.0",
-        "uspdev/webform_boleto_usp": "1.0.11"
+        "uspdev/webform_boleto_usp": "1.0.12"
     },
     "conflict": {
         "drupal/drupal": "*"

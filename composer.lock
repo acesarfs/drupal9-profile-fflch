@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "05d277117f2f9757546824a895f7d41d",
+    "content-hash": "77ce170878a93626816c38316b970a7b",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -11369,16 +11369,16 @@
         },
         {
             "name": "fflch/fflch-theme",
-            "version": "1.0.8",
+            "version": "1.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fflch/fflch-theme.git",
-                "reference": "5a54f288f80a137c6a2d4773838d7e3e429c4cc7"
+                "reference": "5c1d4e1ab58a5c872a1678471a4de09fd9bdf1a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fflch/fflch-theme/zipball/5a54f288f80a137c6a2d4773838d7e3e429c4cc7",
-                "reference": "5a54f288f80a137c6a2d4773838d7e3e429c4cc7",
+                "url": "https://api.github.com/repos/fflch/fflch-theme/zipball/5c1d4e1ab58a5c872a1678471a4de09fd9bdf1a9",
+                "reference": "5c1d4e1ab58a5c872a1678471a4de09fd9bdf1a9",
                 "shasum": ""
             },
             "type": "drupal-theme",
@@ -11395,7 +11395,7 @@
                 "issues": "https://github.com/fflch/fflch-theme/issues",
                 "source": "https://github.com/fflch/fflch-theme"
             },
-            "time": "2021-09-28T17:48:06+00:00"
+            "time": "2024-11-14T22:56:31+00:00"
         },
         {
             "name": "fflch/urbandatabrasil_userform",
@@ -13046,29 +13046,27 @@
         },
         {
             "name": "maxmind-db/reader",
-            "version": "v1.11.1",
+            "version": "v1.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/maxmind/MaxMind-DB-Reader-php.git",
-                "reference": "1e66f73ffcf25e17c7a910a1317e9720a95497c7"
+                "reference": "5b2d7a721dedfaef9dc20822c5fe7d26f9f8eb90"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maxmind/MaxMind-DB-Reader-php/zipball/1e66f73ffcf25e17c7a910a1317e9720a95497c7",
-                "reference": "1e66f73ffcf25e17c7a910a1317e9720a95497c7",
+                "url": "https://api.github.com/repos/maxmind/MaxMind-DB-Reader-php/zipball/5b2d7a721dedfaef9dc20822c5fe7d26f9f8eb90",
+                "reference": "5b2d7a721dedfaef9dc20822c5fe7d26f9f8eb90",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.2"
             },
             "conflict": {
-                "ext-maxminddb": "<1.11.1,>=2.0.0"
+                "ext-maxminddb": "<1.11.1 || >=2.0.0"
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "3.*",
-                "php-coveralls/php-coveralls": "^2.1",
                 "phpstan/phpstan": "*",
-                "phpunit/phpcov": ">=6.0.0",
                 "phpunit/phpunit": ">=8.0.0,<10.0.0",
                 "squizlabs/php_codesniffer": "3.*"
             },
@@ -13105,9 +13103,9 @@
             ],
             "support": {
                 "issues": "https://github.com/maxmind/MaxMind-DB-Reader-php/issues",
-                "source": "https://github.com/maxmind/MaxMind-DB-Reader-php/tree/v1.11.1"
+                "source": "https://github.com/maxmind/MaxMind-DB-Reader-php/tree/v1.12.0"
             },
-            "time": "2023-12-02T00:09:23+00:00"
+            "time": "2024-11-14T22:43:47+00:00"
         },
         {
             "name": "maxmind/web-service-common",
@@ -18070,16 +18068,16 @@
         },
         {
             "name": "uspdev/webform_boleto_usp",
-            "version": "1.0.10",
+            "version": "1.0.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/uspdev/webform_boleto_usp.git",
-                "reference": "cf460878120ea645e4c3d6eea7eeba423deee6b7"
+                "reference": "8c8d74d5ab722888682458216cbde25dce574309"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/uspdev/webform_boleto_usp/zipball/cf460878120ea645e4c3d6eea7eeba423deee6b7",
-                "reference": "cf460878120ea645e4c3d6eea7eeba423deee6b7",
+                "url": "https://api.github.com/repos/uspdev/webform_boleto_usp/zipball/8c8d74d5ab722888682458216cbde25dce574309",
+                "reference": "8c8d74d5ab722888682458216cbde25dce574309",
                 "shasum": ""
             },
             "require": {
@@ -18099,9 +18097,9 @@
             "description": "Gera boletos usando api USP",
             "support": {
                 "issues": "https://github.com/uspdev/webform_boleto_usp/issues",
-                "source": "https://github.com/uspdev/webform_boleto_usp/tree/1.0.10"
+                "source": "https://github.com/uspdev/webform_boleto_usp/tree/1.0.12"
             },
-            "time": "2021-07-08T19:03:28+00:00"
+            "time": "2024-11-14T22:49:01+00:00"
         }
     ],
     "packages-dev": [],
@@ -18116,5 +18114,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.3.0"
 }
