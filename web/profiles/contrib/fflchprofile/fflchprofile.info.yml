@@ -4,6 +4,7 @@ description: 'fflch profile'
 core_version_requirement: ^10.3 || ^11.0
 # Módulos do core usado no profile FFLCH
 install:
+  - rdf
   - book
   - block
   - block_content
