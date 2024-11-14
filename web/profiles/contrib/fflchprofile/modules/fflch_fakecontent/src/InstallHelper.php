@@ -224,6 +224,8 @@ class InstallHelper implements ContainerInjectionInterface {
    */
   protected function fileUnmanagedCopy($path) {
     $filename = basename($path);
+    // ANTIGA:
+    //return file_unmanaged_copy($path, 'public://' . $filename, FILE_EXISTS_REPLACE);
     return \Drupal::service('file_system')->copy($path, 'public://' . $filename, FILE_EXISTS_REPLACE);
   }
 
