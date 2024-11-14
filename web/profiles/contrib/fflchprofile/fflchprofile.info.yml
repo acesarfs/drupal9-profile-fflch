@@ -9,7 +9,6 @@ install:
   - block_content
   - breakpoint
   - ckeditor
-  - color
   - config
   - content_translation
   - config_translation
@@ -18,7 +17,6 @@ install:
   - editor
   - help
   - history 
-  - quickedit
   - image
   - language
   - locale
@@ -35,7 +33,6 @@ install:
   - toolbar
   - field_ui
   - file
-  - rdf
   - views
   - views_ui
   - tour
