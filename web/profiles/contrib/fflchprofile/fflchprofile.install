@@ -9,6 +9,7 @@ use Drupal\user\Entity\User;
 use Drupal\user\RoleInterface;
 use Drupal\shortcut\Entity\Shortcut;
 
+
 /**
  * Implements hook_install().
  *
@@ -18,13 +19,15 @@ use Drupal\shortcut\Entity\Shortcut;
  */
 function fflchprofile_install() {
 
+  // TODO: NÃO FUNCIONA
   // Deny visitor account creation with administrative approval.
-  $user_settings = \Drupal::configFactory()->getEditable('user.settings');
-  $user_settings->set('register', USER_REGISTER_VISITORS_ADMINISTRATIVE_APPROVAL)->save(FALSE);
+  //$user_settings = \Drupal::configFactory()->getEditable('user.settings');
+  //$user_settings->set('register', UserInterface::REGISTER_VISITORS_ADMINISTRATIVE_APPROVAL)->save(FALSE);
 
+  // TODO: NÃO FUNCIONA
   // Enable default permissions for system roles.
-  user_role_grant_permissions(RoleInterface::ANONYMOUS_ID, ['']);
-  user_role_grant_permissions(RoleInterface::AUTHENTICATED_ID, ['']);
+  //user_role_grant_permissions(RoleInterface::ANONYMOUS_ID, ['']);
+  //user_role_grant_permissions(RoleInterface::AUTHENTICATED_ID, ['']);
 
   // Assign user 1 the "administrator" role.
   $user = User::load(1);

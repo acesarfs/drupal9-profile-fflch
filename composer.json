@@ -164,7 +164,7 @@
         "npm-asset/tabletoolstoolbar": "0.0.1",
         "oomphinc/composer-installers-extender": "^2.0",
         "uspdev/utils": "^1.0",
-        "uspdev/webform_boleto_usp": "1.0.10"
+        "uspdev/webform_boleto_usp": "1.0.11"
     },
     "conflict": {
         "drupal/drupal": "*"
