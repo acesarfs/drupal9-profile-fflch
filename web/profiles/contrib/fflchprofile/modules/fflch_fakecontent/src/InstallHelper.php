@@ -5,6 +5,7 @@ namespace Drupal\fflch_fakecontent;
 use Drupal\Core\DependencyInjection\ContainerInjectionInterface;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Extension\ModuleHandlerInterface;
+use Drupal\Core\File\FileExists;
 use Drupal\path_alias\AliasManager;
 use Drupal\Core\State\StateInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
@@ -107,7 +108,9 @@ class InstallHelper implements ContainerInjectionInterface {
   protected function importPages() {
 
     $module_path = $this->moduleHandler->getModule('fflch_fakecontent')->getPath();
+    //var_dump($module_path); die();
     $fflch_image = $this->createFileEntity($module_path . '/default_content/fflch.jpg');
+    //var_dump($fflch_image); die();
 
     $title = [
         'pt-br' => 'Faculdade de Filosofia, Letras e Ciências Humanas',
@@ -120,8 +123,8 @@ class InstallHelper implements ContainerInjectionInterface {
     $file = $module_path .'/default_content/frontpage_pt.html';
     $body = file_get_contents($file);
     $body = str_replace("__fflch_image__", $fflch_image, $body);
-    $uuids = [];
-
+    $uuids = [];        
+    
     // Prepare content.
     $values = [
         'type' => 'page',
@@ -190,14 +193,15 @@ class InstallHelper implements ContainerInjectionInterface {
    */
   protected function createFileEntity($path) {
     $uri = $this->fileUnmanagedCopy($path);
+    //var_dump($uri); die();
     $file = $this->entityTypeManager->getStorage('file')->create([
       'uri' => $uri,
       'status' => 1,
     ]);
     $file->save();
     $this->storeCreatedContentUuids([$file->uuid() => 'file']);
-    //return $file->id();
-    return file_url_transform_relative(file_create_url($file->getFileUri()));
+    return $file->id();
+    //return file_url_transform_relative(file_create_url($file->getFileUri()));
   }
 
   /**
@@ -223,10 +227,12 @@ class InstallHelper implements ContainerInjectionInterface {
    *   The path to the new file, or FALSE in the event of an error.
    */
   protected function fileUnmanagedCopy($path) {
+    //var_dump($path); die();
     $filename = basename($path);
+    //var_dump($filename); die();
     // ANTIGA:
     //return file_unmanaged_copy($path, 'public://' . $filename, FILE_EXISTS_REPLACE);
-    return \Drupal::service('file_system')->copy($path, 'public://' . $filename, FILE_EXISTS_REPLACE);
+    return \Drupal::service('file_system')->copy($path, 'public://' . $filename, FileExists::Replace);
   }
 
 }

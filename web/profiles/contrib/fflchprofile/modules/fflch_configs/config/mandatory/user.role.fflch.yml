@@ -10,7 +10,7 @@ permissions:
   - 'access toolbar'
   - 'access administration pages'
   - 'view the administration theme'
-  - 'access in-place editing'
+#####  - 'access in-place editing'
   - 'access contextual links'
 # Administração de nodes
   - 'bypass node access'
@@ -22,8 +22,8 @@ permissions:
   - 'administer content types'
   - 'administer content translation'
   - 'access files overview'
-  - 'configure any layout'
-  - 'entity print access type node'
+#####  - 'configure any layout'
+#####  - 'entity print access type node'
 # Campos condicionais
   - 'delete conditional fields'
   - 'edit conditional fields'
@@ -44,7 +44,7 @@ permissions:
 # Administração de menus
   - 'administer menu'
 # Módulos e configurações liberados para uso
-  - 'administer google analytics'
+#####  - 'administer google analytics'
   - 'administer image styles'
   - 'administer css assets injector'
   - 'administer js assets injector'
@@ -63,7 +63,7 @@ permissions:
   - 'translate configuration'
   - 'translate menu_link_content'
   - 'translate page node'
-  - 'translate webform node'
+#####  - 'translate webform node'
   - 'update content translations'
 # Temas liberados
   - 'administer themes'
@@ -72,9 +72,9 @@ permissions:
   - 'administer webform'
   - 'edit webform source'
   - 'access webform overview'  
-  - 'entity print access type webform_submission'
+#####  - 'entity print access type webform_submission'
 # Regras
-  - 'administer rules'
+#####  - 'administer rules'
 # Revisões
   - 'revert all revisions'
   - 'view all revisions'
@@ -100,15 +100,15 @@ permissions:
   - 'edit behavior plugin settings'
   - 'view unpublished paragraphs'
   - 'administer paragraphs settings'
-  - 'administer paragraphs library'
-  - 'create paragraph library item'
-  - 'edit paragraph library item'
+#####  - 'administer paragraphs library'
+#####  - 'create paragraph library item'
+#####  - 'edit paragraph library item'
   - 'administer paragraph fields'
   - 'administer paragraph form display'
   - 'administer paragraph display'
 # Layout Builder
-  - 'configure any layout'
-  - 'create and edit custom blocks'
+#####  - 'configure any layout'
+#####  - 'create and edit custom blocks'
 # scheduler
   - 'schedule publishing of nodes'
   - 'view scheduled content'
@@ -122,12 +122,12 @@ permissions:
   - 'administer taxonomy_vocabulary labels'
   - 'administer webform labels'
 # ckditor
-  - 'use ckeditor_uploadimage'
+#####  - 'use ckeditor_uploadimage'
   - 'administer ckeditor accordion'
 # Configurações
   - 'access site reports'
 # copyprevention
-  - 'administer copy prevention'
+#####  - 'administer copy prevention'
 # metatag
   - 'administer meta tags'
 # views_send
@@ -138,9 +138,9 @@ permissions:
   - 'administer CAPTCHA settings'
   - 'administer recaptcha'
 # feeds
-  - 'access feed overview'
-  - 'administer feeds'
-  - 'administer feeds_tamper'
+#####  - 'access feed overview'
+#####  - 'administer feeds'
+#####  - 'administer feeds_tamper'
 # fancy_file_delete
   - 'administer fancy file delete'
   - 'add unmanaged files entities'
@@ -149,21 +149,21 @@ permissions:
   - 'edit unmanaged files entities'
   - 'view unmanaged files entities'
 # module: header_and_footer_scripts
-  - 'header_and_footer_scripts_settings'
+#####  - 'header_and_footer_scripts_settings'
 # rotas para limpar o cache e executar cron
   - 'Performance settings'
   - 'Cron settings'
   - 'Run cron'
   - 'Cron'
 #Facets
-  - 'administer facets'
+#####  - 'administer facets'
 #Workflows
-  - 'administer workflows'
-  - 'use editor transition archived'
-  - 'use editor transition publish'
-  - 'view any unpublished content'
-  - 'view latest version'
+#####  - 'administer workflows'
+#####  - 'use editor transition archived'
+#####  - 'use editor transition publish'
+#####  - 'view any unpublished content'
+#####  - 'view latest version'
 #Search API
-  - 'administer search_api'
+#####  - 'administer search_api'
 #Form Tips 
-  - 'administer formtips'  
+#####  - 'administer formtips'  
