@@ -64,10 +64,8 @@ settings:
           items:
             - ImceImage
             - DrupalLink
-            - Link
             - DrupalUnlink
             - DrupalFile
-            - Anchor
             - Youtube
         -
           name: Listas

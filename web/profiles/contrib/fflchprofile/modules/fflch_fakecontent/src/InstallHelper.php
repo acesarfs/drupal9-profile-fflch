@@ -114,7 +114,7 @@ class InstallHelper implements ContainerInjectionInterface {
 
     $title = [
         'pt-br' => 'Faculdade de Filosofia, Letras e Ciências Humanas',
-        'en' => 'Faculty of Philosophy, Languages and Literature, and Human Sciences',
+        'en' => 'Faculty of Philosophy, Languages and Literature and Human Sciences',
         'es' => 'Facultad de Filosofía, Letras y Ciencias Humanas',
         'fr' => 'Faculté de Philosophie, Lettres et Sciences Humaines ',    
     ];
@@ -199,6 +199,7 @@ class InstallHelper implements ContainerInjectionInterface {
       'status' => 1,
     ]);
     $file->save();
+    //var_dump($file->uuid); die();
     $this->storeCreatedContentUuids([$file->uuid() => 'file']);
     return $file->id();
     //return file_url_transform_relative(file_create_url($file->getFileUri()));
