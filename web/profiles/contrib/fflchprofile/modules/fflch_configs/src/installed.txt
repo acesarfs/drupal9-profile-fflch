@@ -29,6 +29,7 @@ fancy_file_delete
 field_token_value
 fontawesome
 fontyourface
+hcaptcha
 imce
 insert_view_adv
 jquery_countdown_timer
