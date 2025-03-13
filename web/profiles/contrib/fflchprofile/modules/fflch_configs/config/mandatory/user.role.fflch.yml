@@ -6,13 +6,14 @@ label: FFLCH
 weight: 3
 is_admin: null
 permissions:
-# Aparência da administração mais agradável
+# Aparência da Administração Mais Agradável
   - 'access toolbar'
   - 'access administration pages'
   - 'view the administration theme'
 #####  - 'access in-place editing'
   - 'access contextual links'
-# Administração de nodes
+
+# Administração de Nodes
   - 'bypass node access'
   - 'administer node form display'
   - 'access content overview'
@@ -24,35 +25,45 @@ permissions:
   - 'access files overview'
 #####  - 'configure any layout'
 #####  - 'entity print access type node'
-# Campos condicionais
+
+# Campos Condicionais
   - 'delete conditional fields'
   - 'edit conditional fields'
   - 'view conditional fields'
-# Configurações globais liberadas
+
+# Configurações Globais
   - 'Administer Inital Page'
-# Administração de urls
+
+# Administração de URLs
   - 'administer pathauto'
   - 'administer url aliases'
   - 'create url aliases'
-# Administração de blocos
+
+# Administração de Blocos
   - 'administer blocks'
   - 'administer block_content display'
   - 'administer block_content form display'
   - 'administer block_content fields'
-# Administração de views
+
+# Administração de Views
   - 'administer views'
-# Administração de menus
+
+# Administração de Menus
   - 'administer menu'
-# Módulos e configurações liberados para uso
+
+# Módulos e Configurações
 #####  - 'administer google analytics'
   - 'administer image styles'
   - 'administer css assets injector'
   - 'administer js assets injector'
   - 'csv importer'
+
 # Editor de texto
   - 'use text format full_html'
+
 # Não digitar captcha
   - 'skip CAPTCHA'
+
 # Sites Multi-idiomas
   - 'administer languages'
   - 'create content translations'
@@ -65,37 +76,47 @@ permissions:
   - 'translate page node'
 #####  - 'translate webform node'
   - 'update content translations'
-# Temas liberados
+
+# Temas
   - 'administer themes'
   - 'administer themes fflch'
+
 # Webform
   - 'administer webform'
   - 'edit webform source'
   - 'access webform overview'  
 #####  - 'entity print access type webform_submission'
+
 # Regras
 #####  - 'administer rules'
+
 # Revisões
   - 'revert all revisions'
   - 'view all revisions'
+
 # Taxonomia
   - 'access taxonomy overview'
   - 'administer taxonomy_term display'
   - 'administer taxonomy_term fields'
   - 'administer taxonomy_term form display'
   - 'administer taxonomy'
+
 # Search
   - 'search content'
-# Permissões para book
+
+# Permissões Para Book
   - 'add content to books'
   - 'administer book outlines'
   - 'create new books'
+
 # Redirects
   - 'administer redirects'
   - 'administer redirect settings'
-# Fonts
+
+# Fontes
   - 'administer font entities'
-# Paragraphs:
+
+# Paragraphs
   - 'administer paragraphs types'
   - 'edit behavior plugin settings'
   - 'view unpublished paragraphs'
@@ -106,64 +127,80 @@ permissions:
   - 'administer paragraph fields'
   - 'administer paragraph form display'
   - 'administer paragraph display'
+
 # Layout Builder
 #####  - 'configure any layout'
 #####  - 'create and edit custom blocks'
-# scheduler
+
+# Scheduler
   - 'schedule publishing of nodes'
   - 'view scheduled content'
-# display modes
+# Display Modes
   - 'administer display modes'
-# automatic entity label
+# Automatic Entity Label
   - 'administer block_content_type labels'
   - 'administer node_type labels'
   - 'administer paragraphs_type labels'
   - 'administer shortcut_set labels'
   - 'administer taxonomy_vocabulary labels'
   - 'administer webform labels'
-# ckditor
+
+# CKEditor
 #####  - 'use ckeditor_uploadimage'
   - 'administer ckeditor accordion'
+
 # Configurações
   - 'access site reports'
-# copyprevention
+
+# Copyprevention
 #####  - 'administer copy prevention'
-# metatag
+
+# Metatag
   - 'administer meta tags'
-# views_send
+
+# Views_send
   - 'administer views_send'
   - 'mass mailing with views_send'
   - 'attachments with views_send'
-# administrar captcha
+
+# Administrar Captcha
   - 'administer CAPTCHA settings'
   - 'administer recaptcha'
-# feeds
+  - 'administer hcaptcha'
+
+# Feeds
 #####  - 'access feed overview'
 #####  - 'administer feeds'
 #####  - 'administer feeds_tamper'
-# fancy_file_delete
+
+# Fancy_file_delete
   - 'administer fancy file delete'
   - 'add unmanaged files entities'
   - 'administer unmanaged files entities'
   - 'delete unmanaged files entities'
   - 'edit unmanaged files entities'
   - 'view unmanaged files entities'
-# module: header_and_footer_scripts
+##### module: header_and_footer_scripts
 #####  - 'header_and_footer_scripts_settings'
-# rotas para limpar o cache e executar cron
+
+# Rotas Para Limpar o Cache e Executar o Cron
   - 'Performance settings'
   - 'Cron settings'
   - 'Run cron'
   - 'Cron'
+
 #Facets
 #####  - 'administer facets'
+
 #Workflows
 #####  - 'administer workflows'
 #####  - 'use editor transition archived'
 #####  - 'use editor transition publish'
 #####  - 'view any unpublished content'
 #####  - 'view latest version'
+
 #Search API
 #####  - 'administer search_api'
+
 #Form Tips 
 #####  - 'administer formtips'  
