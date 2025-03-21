@@ -1,6 +1,6 @@
 name: 'fflch fake content'
 description: Imports fflch fake content to site
-core_version_requirement: ^10.3 || ^11.0
+core_version_requirement: ^9
 type: module
 package: 'FFLCH'
 dependencies:

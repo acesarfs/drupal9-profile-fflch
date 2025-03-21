@@ -43,7 +43,6 @@ recaptcha
 redirect
 scheduler
 smtp
-theme_permission
 token
 token_filter
 verf

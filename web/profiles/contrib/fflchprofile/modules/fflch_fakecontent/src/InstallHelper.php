@@ -109,7 +109,7 @@ class InstallHelper implements ContainerInjectionInterface {
 
     $module_path = $this->moduleHandler->getModule('fflch_fakecontent')->getPath();
     //var_dump($module_path); die();
-    $fflch_image = $this->createFileEntity($module_path . '/default_content/fflch.jpg');
+    //$fflch_image = $this->createFileEntity($module_path . '/default_content/fflch.jpg');
     //var_dump($fflch_image); die();
 
     $title = [
@@ -232,8 +232,8 @@ class InstallHelper implements ContainerInjectionInterface {
     $filename = basename($path);
     //var_dump($filename); die();
     // ANTIGA:
-    //return file_unmanaged_copy($path, 'public://' . $filename, FILE_EXISTS_REPLACE);
-    return \Drupal::service('file_system')->copy($path, 'public://' . $filename, FileExists::Replace);
+    return file_unmanaged_copy($path, 'public://' . $filename, FILE_EXISTS_REPLACE);
+    //return \Drupal::service('file_system')->copy($path, 'public://' . $filename, FileExists::Replace);
   }
 
 }
